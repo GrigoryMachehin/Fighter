@@ -5,10 +5,8 @@
 #include <iostream>
 #include <locale>
 #include <iomanip>
-#include <audiere.h>
 
 using namespace std;
-using namespace audiere;
 
 void Intro();
 
