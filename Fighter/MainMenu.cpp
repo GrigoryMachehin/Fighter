@@ -1,4 +1,4 @@
-﻿#include "FighterLibrary.h"
+#include "FighterLibrary.h"
 
 void Intro()
 {
@@ -16,10 +16,6 @@ void Intro()
 
 void MainMenu(int switcher)
 {
-    AudioDevicePtr device = OpenDevice();
-    OutputStreamPtr button = OpenSound(device, "button.wav", false);
-    button->play();
-
     int key;
     system("cls");
   
@@ -92,10 +88,6 @@ void Cheats(int switcher)
     {
         int key;
         system("cls");
-
-        AudioDevicePtr device = OpenDevice();
-        OutputStreamPtr button = OpenSound(device, "button.wav", false);
-        button->play();
 
         switch (switcher)
         {
